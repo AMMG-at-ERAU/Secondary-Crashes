@@ -2,11 +2,10 @@
 [![CRAN_Download_Count](http://cranlogs.r-pkg.org/badges/ETAS)](https://CRAN.R-project.org/package=ETAS)
 [![Build Status](https://travis-ci.org/jalilian/ETAS.svg?branch=master)](https://travis-ci.org/jalilian/ETAS)
 
-# ETAS model
+# Temporal point process model to identify secondary crashes
 
-An earthquake catalog is a chronologically ordered list of time, coordinates of epicenter, magnitude and focal depth of all recorded earthquakes with magnitudes greater than or equal to a certain threshold that occurred inside or in the vicinity of a geographical region during a specified time period. Among different proposed models, the epidemic type aftershock sequence (ETAS) model is the most widely used statistical model to describe the underlying process that generates an earthquake catalogs. 
+The R code for the ETAS model obtained from Jalilian is adapted to identify the secondary crash events in the present work. The code was developed to analyze an earthquake catalog using the stochastic declustering approach. We modified the code for a temporal-only self-exciting point process for the current application. The input data contains the date and time of the crash events. We have classified potential secondary crashes from the dataset based on queue time and corresponding probability values obtained from the model.![image](https://github.com/AMMG-at-ERAU/Secondary-Crashes/assets/12189834/b32cf07d-77c2-4d3a-bdbd-7dc69e26076b)
 
-The space-time version of the ETAS model is a spatio-temporal marked point process model. It is a semi-parametric model that describes the background and triggering seismic activities in a geographical region and can be used for earthquake declustering. However, estimation of the ETAS model parameters is computationally challenging. The 'ETAS' package fits the ETAS model to an earthquake catalog. The `etas` function in the package is based on a C port of a [Fortran program](http://bemlar.ism.ac.jp/zhuang/software.html) by Jiancang Zhuang, Yosihiko Ogata and their colleagues.
 
 ## Installation
 
